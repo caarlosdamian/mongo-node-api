@@ -2,6 +2,7 @@ import expres from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import userRouter from "./routes/users.js";
+import formRouter from "./routes/form.js";
 import bodyParser from "body-parser";
 
 
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/v1", userRouter);
+app.use("/api/v1", formRouter);
 
 // mongo db connection
 mongoose

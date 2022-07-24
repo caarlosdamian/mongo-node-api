@@ -18,5 +18,4 @@ router.get("/users/:id", getUserById);
 router.put("/users/:id", updateUser);
 // delete user
 router.delete("/users/:id", deleteUser);
-
 export default router;
